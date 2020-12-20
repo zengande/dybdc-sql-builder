@@ -1,4 +1,4 @@
-# Awesome.Data.Sql.Builder
+# Dybdc.Data.Sql.Builder
 
 Travis CI: [![Build Status](https://travis-ci.org/cdroulers/awesome-sql-builder.svg)](https://travis-ci.org/cdroulers/awesome-sql-builder)
 Gitter Chat: [![Gitter chat](https://badges.gitter.im/cdroulers/awesome-sql-builder.png)](https://gitter.im/awesome-sql-builder/Lobby)
@@ -12,22 +12,22 @@ in a fluent, simple way.
 
 It definitely does not aim to be an ORM, so there's no integration with any actual querying mechanism!
 
-## Awesome.Data.Sql.Builder.OData
+## Dybdc.Data.Sql.Builder.OData
 
 A small helper project that allows transforming `ODataQueryOptions<T>` directly into
 a `SelectStatement`.
 
 ## Installation
 
-[NuGet Awesome.Data.Sql.Builder](https://www.nuget.org/packages/Awesome.Data.Sql.Builder/)
+[NuGet Dybdc.Data.Sql.Builder](https://www.nuget.org/packages/Dybdc.Data.Sql.Builder/)
 
-`Install-Package Awesome.Data.Sql.Builder`
+`Install-Package Dybdc.Data.Sql.Builder`
 
-[NuGet Awesome.Data.Sql.Builder.OData](https://www.nuget.org/packages/Awesome.Data.Sql.Builder.OData/)
+[NuGet Dybdc.Data.Sql.Builder.OData](https://www.nuget.org/packages/Dybdc.Data.Sql.Builder.OData/)
 
-`Install-Package Awesome.Data.Sql.Builder.OData`
+`Install-Package Dybdc.Data.Sql.Builder.OData`
 
-## Awesome.Data.Sql.Builder Usage
+## Dybdc.Data.Sql.Builder Usage
 
 ### SELECT Statement
 
@@ -148,7 +148,7 @@ OFFSET 6 ROWS
 FETCH NEXT 3 ROWS ONLY"));
 ```
 
-## Awesome.Data.Sql.Builder.OData Usage
+## Dybdc.Data.Sql.Builder.OData Usage
 
 ```csharp
 var options = ODataQueryOptionsHelper.Build<TestDTO>(
@@ -204,7 +204,7 @@ Author: [cdroulers](https://github.com/cdroulers)
 
 LGPL: See [LICENSE](LICENSE)
 
-## Awesome.Data.Sql.Builder History
+## Dybdc.Data.Sql.Builder History
 
 ### 1.2.0 (2018-05-07)
 
@@ -224,7 +224,7 @@ LGPL: See [LICENSE](LICENSE)
 
 * ???
 
-## Awesome.Data.Sql.Builder.OData History
+## Dybdc.Data.Sql.Builder.OData History
 
 ### 1.0.0 (2016-01-23)
 
