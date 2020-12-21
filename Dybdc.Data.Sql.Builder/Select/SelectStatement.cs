@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
@@ -119,6 +119,24 @@ namespace Dybdc.Data.Sql.Builder.Select
             }
 
             this.groupByClauses.Add(column);
+            return this;
+        }
+
+        /// <summary>
+        ///     Adds column list to the GROUP BY clause.
+        /// </summary>
+        /// <param name="column">The column.</param>
+        /// <param name="clearCurrent">if set to <c>true</c> [clearCurrent]</param>
+        /// <returns></returns>
+        public SelectStatement GroupBy(IEnumerable<string> columns, bool clearCurrent = false)
+        {
+            if (clearCurrent)
+            {
+                this.groupByClauses.Clear();
+            }
+
+            var groups = columns.Select(c => new GroupByClause(c));
+            groupByClauses.AddRange(groups);
             return this;
         }
 

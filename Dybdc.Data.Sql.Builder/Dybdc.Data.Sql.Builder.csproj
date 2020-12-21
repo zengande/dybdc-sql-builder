@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>2.0.0</Version>
-    <Authors>Christian Droulers &lt;droulers.christian@gmail.com&gt;</Authors>
+    <Version>1.0.2</Version>
+    <Authors>zeng ande</Authors>
     <Description>A simple library to build SQL queries.</Description>
     <Company />
-    <RepositoryUrl>git@github.com:cdroulers/awesome-sql-builder.git</RepositoryUrl>
+    <RepositoryUrl>git@github.com:zengande/dybdc-sql-builder.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseUrl>http://www.gnu.org/licenses/lgpl.html</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cdroulers/awesome-sql-builder</PackageProjectUrl>
